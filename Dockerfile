@@ -21,4 +21,4 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 # Copy the custom theme into the image
 COPY ./my-theme/ /opt/keycloak/themes/my-theme
 
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh --spi-theme-static-max-age=-1 --spi-theme-cache-themes=false --spi-theme-cache-templates=false"]
