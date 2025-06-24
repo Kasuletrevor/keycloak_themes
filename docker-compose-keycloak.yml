@@ -1,5 +1,6 @@
 services:
-  keycloak:
+  dsi_keycloak:
+    container_name: dsi_keycloak
     build:
       context: .
       dockerfile: Dockerfile
@@ -21,17 +22,18 @@ services:
       KC_PROXY_HEADERS: xforwarded
       KC_SPI_THEME_DEFAULT: my-theme
     depends_on:
-      keycloakdb:
+      dsi_keycloakdb:
         condition: service_healthy
     restart: unless-stopped
     networks:
-      - keycloak-network
+      - proxy_hostinger-network
 
-  keycloakdb:
+  dsi_keycloakdb:
+    container_name: dsi_keycloakdb
     image: postgres:latest
     command: postgres -c 'max_connections=200'
     volumes:
-      - keycloak_data:/var/lib/postgresql/data
+      - dsi_keycloak_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: ${KEYCLOAK_POSTGRES_DB}
       POSTGRES_USER: ${KEYCLOAK_POSTGRES_USER}
@@ -42,10 +44,11 @@ services:
       - "5436:5432"
     restart: unless-stopped
     networks:
-      - keycloak-network
+      - proxy_hostinger-network
 
 volumes:
-  keycloak_data:
+  dsi_keycloak_data:
 
 networks:
-  keycloak-network:
+  proxy_hostinger-network:
+    external: true
