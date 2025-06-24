@@ -5,7 +5,7 @@ html {
   flex: 1;
   overflow: hidden;
   min-height: 0;
-  font-size: 14px;
+  font-size: 18px;
   color: rgba(0, 0, 0, .87);
   margin: 0;
   height: 100%;
@@ -109,7 +109,7 @@ body {
   background-color: #fff; */
   width: 280px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   margin: 8px 0 0;
   display: inline-block;
   border: 1px solid #000;
@@ -134,7 +134,7 @@ body {
   border-radius: 2px;
   background-color: #000;
   font-family: Muli;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -161,7 +161,7 @@ body {
 .login-content .box .copyright {
   min-width: 320px;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   opacity: .54;
   position: relative;
   top: 100px;
@@ -175,7 +175,7 @@ body {
   height: 22px;
   opacity: 0.87;
   font-family: Muli;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -194,7 +194,7 @@ body {
 .identity-providers {
   width: 270px;
   font-family: Muli;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -212,7 +212,7 @@ body {
   border-radius: 2px;
   background-color: var(--white);
   font-family: Muli;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -229,7 +229,7 @@ body {
 
 .login-content .box .para {
   font-family: Muli;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 50px;
   margin-left: 150px;
 }
@@ -289,7 +289,7 @@ body {
   border-radius: 2px;
   background-color: #139da5;
   font-family: Muli;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -322,7 +322,7 @@ body {
   border-radius: 2px;
   background-color: var(--white);
   font-family: Muli;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
