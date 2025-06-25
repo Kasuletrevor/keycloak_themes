@@ -314,6 +314,12 @@ body {
   font-size: 1.3rem;
 }
 
+.instruction {
+  font-size: 18px !important;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 #kc-form-buttons {
   display: flex;
   flex-direction: column;
