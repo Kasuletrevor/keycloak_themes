@@ -132,7 +132,7 @@ body {
   width: 320px;
   height: 36px;
   border-radius: 2px;
-  background-color: #000;
+  background-color: #345896;
   font-family: Muli;
   font-size: 16px;
   font-weight: bold;
@@ -145,6 +145,12 @@ body {
   border-style: none;
   margin-top: 50px;
   margin-bottom: 10px;
+}
+
+.login-content .box .submit:hover {
+  background-color: #2a4a7a;
+  /* Slightly darker blue on hover */
+  cursor: pointer;
 }
 
 .login-content .box .visibility {
